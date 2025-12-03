@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="display">
+        <input type="text" id="resultado" readonly>
+      </div>
+      <div class="botones">
+        <button class="operador" onclick="limpiarPantalla()">C</button>
+        <button class="operador" onclick="quitarValor()">←</button>
+        <button class="operador" onclick="ingresarOperadores('%')">%</button>
+        <button class="operador" onclick="ingresarOperadores('/')">/</button>
+        <button class="numero" onclick="ingresarUnNumero('7')">7</button>
+        <button class="numero" onclick="ingresarUnNumero('8')">8</button>
+        <button class="numero" onclick="ingresarUnNumero('9')">9</button>
+        <button class="operador" onclick="ingresarOperadores('×')">×</button>
+        <button class="numero" onclick="ingresarUnNumero('4')">4</button>
+        <button class="numero" onclick="ingresarUnNumero('5')">5</button>
+        <button class="numero" onclick="ingresarUnNumero('6')">6</button>
+        <button class="operador" onclick="ingresarOperadores('-')">-</button>
+        <button class="numero" onclick="ingresarUnNumero('1')">1</button>
+        <button class="numero" onclick="ingresarUnNumero('2')">2</button>
+        <button class="numero" onclick="ingresarUnNumero('3')">3</button>
+        <button class="operador" onclick="ingresarOperadores('+')">+</button>
+        <button class="numero" onclick="ingresarUnNumero('0')">0</button>
+        <button class="operador punto" onclick="ingresarOperadores('.')">.</button>
+        <button class="operador boton-alargado" onclick="ingresarOperadores('=')">=</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+
+</html>
