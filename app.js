@@ -93,7 +93,7 @@ function manejoDeErrores() {
         }, 2000);
 
     } catch (err) {
-        input.value = err.message;
+        input.value = "Error";
         temporizador = setTimeout(() => {
             input.value = "0";
         }, 2000);
